@@ -1,0 +1,18 @@
+<div class="top-menu">
+
+    <img class="logo"
+         src="https://cdn-images-1.medium.com/max/803/1*2GumncRemjwIHayYT0dBdw.png"> 
+         <strong style="float: right">Angular Deep Dive</strong>
+</div>
+
+<button (click)="onMoviesEdited()">Edit Movies</button>
+
+<div class="courses">
+  <movie-card *ngFor="let movie of movies;index as i;"
+   (movieSelected)="onMovieSelected($event)"
+   [movie]="movie" [cardIndex]="i+1">
+  </movie-card>
+ 
+</div>
+
+

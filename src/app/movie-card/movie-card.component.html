@@ -1,0 +1,31 @@
+<ng-container *ngIf="movie">
+<div class="course-card"  [ngClass]="cardClasses()"> 
+
+  <div class="course-title">
+      {{cardIndex || '' + ' ' + movie.name}}
+  </div>
+  <img width="300" alt="Angular Logo" *ngIf="isImageAvailable(); else noImage"
+       [src]="movie.iconUrl">
+
+  <ng-template #noImage>
+    <p>No Image Available.</p>
+  </ng-template>
+
+  <div class="course-description">
+      {{movie.longDescription}}
+  </div>
+
+  <ng-container [ngSwitch]="movie.genre">
+  <div class="course-category">
+
+      <div class="category" *ngSwitchCase="'Action'">Action</div>
+      <div class="category" *ngSwitchCase="'Thriller'">Thriller</div>
+      <div class="category" *ngSwitchCase="'Romance'">Romance</div>
+      <div class="category" *ngSwitchDefault>All Levels</div>
+  </div>
+</ng-container>
+
+  <button (click)="onMovieViewed()">View Movie</button>
+</div>
+
+</ng-container>

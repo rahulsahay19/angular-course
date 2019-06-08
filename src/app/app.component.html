@@ -5,8 +5,6 @@
          <strong style="float: right">Angular Deep Dive</strong>
 </div>
 
-<button (click)="onMoviesEdited()">Edit Movies</button>
-
 <div class="movies">
   <movie-card *ngFor="let movie of movies;index as i;"
    (movieSelected)="onMovieSelected($event)"

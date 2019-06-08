@@ -2,8 +2,8 @@
 
 import * as express from 'express';
 import {Application} from "express";
-import {getAllCourses} from './server/get-courses.route';
-import {saveCourse} from './server/save-course.route';
+import { getAllMovies } from 'server/get-movies.route';
+import { saveMovie } from 'server/save-movie.route';
 
 
 const bodyParser = require('body-parser');
@@ -12,9 +12,9 @@ const app: Application = express();
 
 app.use(bodyParser.json());
 
-app.route('/api/courses').get(getAllCourses);
+app.route('/api/moives').get(getAllMovies);
 
-app.route('/api/courses/:id').put(saveCourse);
+app.route('/api/moives/:id').put(saveMovie);
 
 
 

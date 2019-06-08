@@ -1,7 +1,7 @@
 <ng-container *ngIf="movie">
-<div class="course-card"  [ngClass]="cardClasses()"> 
+<div class="movie-card"  [ngClass]="cardClasses()"> 
 
-  <div class="course-title">
+  <div class="movie-title">
       {{cardIndex || '' + ' ' + movie.name}}
   </div>
   <img width="300" alt="Angular Logo" *ngIf="isImageAvailable(); else noImage"
@@ -11,12 +11,12 @@
     <p>No Image Available.</p>
   </ng-template>
 
-  <div class="course-description">
+  <div class="movie-description">
       {{movie.longDescription}}
   </div>
 
   <ng-container [ngSwitch]="movie.genre">
-  <div class="course-category">
+  <div class="movie-category">
 
       <div class="category" *ngSwitchCase="'Action'">Action</div>
       <div class="category" *ngSwitchCase="'Thriller'">Thriller</div>

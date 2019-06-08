@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { Course } from '../model/course';
 import { Movie } from '../model/movie';
 
 
@@ -36,13 +35,9 @@ movieSelected = new EventEmitter<Movie>();
     if(this.movie.genre === 'Action') {
       return 'action';
     }
-
-    // return {
-    //   'beginner': this.course.category === 'BEGINNER'
-    // }
   }
   cardStyles() {
-   // return {'background-image': 'url(' + this.course.iconUrl +')'
+  
   };
 }
 

@@ -1,6 +1,4 @@
 import { Component, Input, ViewChild, ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
-import {COURSES} from '../db-data';
-import { Course } from './model/course';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { MOVIES } from 'src/db-movie';
 import { Movie } from './model/movie';

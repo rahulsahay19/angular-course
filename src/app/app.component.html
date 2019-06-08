@@ -7,7 +7,7 @@
 
 <button (click)="onMoviesEdited()">Edit Movies</button>
 
-<div class="courses">
+<div class="movies">
   <movie-card *ngFor="let movie of movies;index as i;"
    (movieSelected)="onMovieSelected($event)"
    [movie]="movie" [cardIndex]="i+1">

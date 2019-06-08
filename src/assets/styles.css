@@ -1,9 +1,9 @@
 
-course-card {
+movie-card {
   display: block;
 }
 
-.course-card {
+.movie-card {
   margin-bottom: 40px;
   text-align: center;
   border-radius: 4px;
@@ -11,19 +11,19 @@ course-card {
   box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);
 }
 
-.course-card .course-title {
+.movie-card .movie-title {
   font-size: 27px;
   font-weight: bold;
 }
 
-.course-card .course-description {
+.movie-card .movie-description {
   max-width: 360px;
   margin: 0 auto;
   margin-top: 15px;
   user-select: none;
 }
 
-.course-card img {
+.movie-card img {
   border-radius: 4px;
   margin-top: 10px;
 }
@@ -37,25 +37,25 @@ button {
   border-radius: 4px;
 }
 
-course-card.is-first {
+movie-card.is-first {
   border-top: 2px solid grey;
   padding-top: 20px;
 }
 
-course-card.is-last {
+movie-card.is-last {
   border-bottom: 2px solid grey;
   padding-top: 20px;
 }
 
-course-card.is-even {
+movie-card.is-even {
   background: lightgray;
 }
 
-course-card.is-odd {
+movie-card.is-odd {
   background: lightcyan;
 }
 
-.course-category {
+.movie-category {
   margin-top: 15px;
 }
 
